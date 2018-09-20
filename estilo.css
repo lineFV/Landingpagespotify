@@ -1,16 +1,50 @@
-
-
 body{
     margin: 0;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient( pink , yellow);
+    background-image: linear-gradient(to bottom, rgb(253, 0, 50) , yellow);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
-
+.circulos1{
+    display: inline-block;
+    width: 331px;
+    height: 331px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0;
+    background-image: linear-gradient(to top, rgb(253, 0, 50) , yellow);
+    bottom: 290px;
+    z-index: -1;
+    left: -40px;
+}
+.circulos2 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0;
+    background-image: linear-gradient(to top, rgb(253, 0, 50) , yellow);
+    bottom: 37vh;
+    z-index: -1;
+    left: 43vw
+}
+.circulos3{
+    display: inline-block;
+    width: 331px;
+    height: 331px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0;
+    background-image: linear-gradient(to top, rgb(253, 0, 50) , yellow);
+    top: 290px;
+    z-index: -1;
+    right: -40px;
+}
+ 
 header{
-    height: 70px;
+    height: 55px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -18,123 +52,191 @@ header{
     background-color: rgba(0, 0, 0);
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 h1{
     color: white;
 }
-header img{
+.spotifylogo{
     height: 50px;
 }
-
+.logotipo:nth-child(1){
+    width: 47px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+}
+header>img{
+    height: 30px;
+    margin:0 10px;
+}
 nav{
    display: none;
-
 }
-
+.icon{
+    width: 100vw;
+    display: flex;
+}
 .icones{
-    height: 50px;
+    width: 25px;
+    height:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    background-color: #222326;
+    margin: 5px;
+    padding: 10px;
+    border-radius:50%;
+    
+}
+.icones img{
+    width: 25px;
+    height:25px;
+    position: relative;
+    z-index: 2;
+}
+.icones img:hover{
+    z-index: 1;
+}
+.facev{
+    /* visibility: hidden; */
+    position: relative;
+    bottom:22px;
+    z-index: 1;
+}
+.instav{
+    /* visibility: hidden; */
+    position: relative;
+    bottom:22px;
+}
+.twitv{
+    /* visibility: hidden; */
+    position: relative;
+    bottom:22px;
 }
 
-#hamburguer{
+.icones img{
+    width: 22px;
+    height: 22px;
+}
+
+/* #hamburguer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 40px;
     width: 40px;
-    background-color: black;
+    background-color: white;
     border: 2px solid white;
 }
-
-
 #hamburger div{
     width: 30px;
     height: 10px;
     background-color: white;
     border-radius: 90%;
 
-}
+} */
 
 section{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 200px;
+    height: 100vh;
+    margin:0;
     flex-direction: column;
+    z-index: 1;
+    background: rgb(255,255,255,0.3);
 }
 
-.logotopo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+section p:first-child {
+    font-size: 30pt;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 15vh;
 }
-.logotopo img{
-
-}
-
-.logotopo h1{
+section p:nth-child(2) {
     font-size: 13pt;
-    margin-left: 5px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 5vh;
 }
-
 .botao {
     width: 270px;
-    height: 50px;
-    background-color: green;
-    border-radius:20px;
+    height: 45px;
+    background-color: #1ED760;
+    border-radius:40px;
     color: white;
     border: 0px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
+    font-weight: bolder;
     text-transform: uppercase;
     padding: 10px 30px;
+    position: relative;
+    bottom: 5vh;
+}
+.logotipo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0 10px;
+}
+.logotipo img{
+
+}
+
+.logotipo h1{
+    font-size: 13pt;
+    margin-left: 5px;
 }
 .titulo{
     font-size: 15pt;
 
 }
-section p:first-child {
-    font-size: 40pt;
-    font-weight: bolder;
-    text-align: center;
-}
-section p:nth-child(2) {
-    font-size: 15pt;
-    text-align: center;
-}
-
 footer{
     display: flex;
     background-color: black;
+    flex-wrap: wrap;
+    height: 92vh;
     
 }
-
 footer img{
     width: 50px;
 }
 
 footer a {
- display: flex;
+display: flex;
 text-decoration: none;
 color: white    ;
+font-size:10pt;
 
 }
 
-footer h2{
-    
+footer h2{  
 color: gray;
-
+font-size:10pt;
 }
 
- li {
+.divfooter{
+ width: 40vw;
+ height: 30vh;
+}
+.divfooter:nth-child(3){
+    width: 100vw;
+    height: 30vh;
+   }
+li {
     list-style: none;
-    flex-direction: column;
-
-    
+    margin: 15px 0;    
 }
+#div{
+        background-color: rgba(0, 0, 0);
+    }
+
 @media screen and (min-width:640px){
 
 }
-/* .titulo{
- bottom:30px;
-} */
