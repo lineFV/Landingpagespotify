@@ -1,27 +1,35 @@
 body{
+    width: 100vw;
+    height: 200vh;
     margin: 0;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom, rgb(253, 0, 50) , yellow);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
     color: white;
+    overflow-x: hidden;
+}
+#circulos{
+    display: flex;
+justify-content: center;
+align-items: 
 }
 .circulos1{
     display: inline-block;
-    width: 331px;
-    height: 331px;
+    width: 365px;
+    height: 365px;
     border-radius: 50%;
     position: absolute;
     margin: 0;
     background-image: linear-gradient(to top, rgb(253, 0, 50) , yellow);
-    bottom: 290px;
+    bottom: 18px;
     z-index: -1;
-    left: -40px;
+    left: -347px;
 }
 .circulos2 {
     display: inline-block;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     position: absolute;
     margin: 0;
@@ -32,15 +40,15 @@ body{
 }
 .circulos3{
     display: inline-block;
-    width: 331px;
-    height: 331px;
+    width: 365px;
+    height: 365px;
     border-radius: 50%;
     position: absolute;
     margin: 0;
     background-image: linear-gradient(to top, rgb(253, 0, 50) , yellow);
-    top: 290px;
+    top: 36px;
     z-index: -1;
-    right: -40px;
+    right: -343px;
 }
  
 header{
@@ -69,6 +77,8 @@ h1{
 header>img{
     height: 30px;
     margin:0 10px;
+    position: relative;
+    right: 0px;
 }
 nav{
    display: none;
@@ -152,14 +162,14 @@ section{
 
 section p:first-child {
     font-size: 30pt;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center;
     position: relative;
     top: 15vh;
 }
 section p:nth-child(2) {
     font-size: 13pt;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     position: relative;
     bottom: 5vh;
@@ -184,6 +194,8 @@ section p:nth-child(2) {
     flex-direction: row;
     align-items: center;
     margin:0 10px;
+    position: relative;
+    left: 0px;
 }
 .logotipo img{
 
@@ -202,7 +214,6 @@ footer{
     background-color: black;
     flex-wrap: wrap;
     height: 92vh;
-    
 }
 footer img{
     width: 50px;
